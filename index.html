@@ -1,532 +1,339 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nasir Khan | Data Engineering & AI Portfolio</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Nasir Khan | Interactive Data Engineering Portfolio</title>
+    <!-- Tailwind CSS v4 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome for Icons -->
+    <!-- FontAwesome Premium Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .custom-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .glass-card { background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(241, 245, 249, 0.8); }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased balance">
+<body class="bg-[#f8fafc] text-[#0f172a] font-sans antialiased selection:bg-blue-600 selection:text-white">
 
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">NK.</span>
+    <!-- Premium Spline-Style Header Canvas -->
+    <div class="relative w-full min-h-[500px] lg:h-[70vh] flex items-center bg-slate-900 overflow-hidden text-white" style="background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 30%, rgba(30, 41, 59, 0.85) 100%), url('bg.png'); bg-size: cover; bg-position: center;">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-25"></div>
+        
+        <div class="relative max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 z-10 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Brand Profile Module -->
+                <div class="lg:col-span-4 text-center lg:text-left space-y-6">
+                    <div class="inline-block relative">
+                        <img src="dp.png" alt="Nasir Khan" class="w-40 h-40 lg:w-48 lg:h-48 rounded-3xl object-cover border-4 border-slate-700/50 shadow-2xl mx-auto transform hover:scale-[1.02] transition duration-300">
+                        <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white font-black text-[10px] tracking-widest uppercase py-1 px-3 rounded-full shadow-lg whitespace-nowrap">Verified Engineer</div>
+                    </div>
                 </div>
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition">About</a>
-                    <a href="#skills" class="text-gray-600 hover:text-blue-600 font-medium transition">Skills</a>
-                    <a href="#experience" class="text-gray-600 hover:text-blue-600 font-medium transition">Experience</a>
-                    <a href="#projects" class="text-gray-600 hover:text-blue-600 font-medium transition">Projects</a>
-                    <a href="#certifications" class="text-gray-600 hover:text-blue-600 font-medium transition">Certifications</a>
-                    <a href="#education" class="text-gray-600 hover:text-blue-600 font-medium transition">Education</a>
+
+                <!-- Bio Architecture Node -->
+                <div class="lg:col-span-8 space-y-6 text-center lg:text-left">
+                    <div class="space-y-2">
+                        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white">Nasir Khan</h1>
+                        <p class="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">Data Engineering & Deep Learning Professional</p>
+                    </div>
+
+                    <!-- Compact Communication Array -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-3 text-xs text-slate-300 font-medium">
+                        <a href="mailto:alignasirkhan@gmail.com" class="hover:text-white transition flex items-center gap-2 bg-white/5 px-3 py-2 rounded-xl border border-white/10 custom-blur"><i class="fa-solid fa-envelope text-blue-400"></i> alignasirkhan@gmail.com</a>
+                        <a href="tel:992-7387-864" class="hover:text-white transition flex items-center gap-2 bg-white/5 px-3 py-2 rounded-xl border border-white/10 custom-blur"><i class="fa-solid fa-phone text-blue-400"></i> 992-7387-864</a>
+                        <a href="https://linkedin.com/in/thenasirkhan" target="_blank" class="hover:text-white transition flex items-center gap-2 bg-white/5 px-3 py-2 rounded-xl border border-white/10 custom-blur"><i class="fa-brands fa-linkedin text-blue-400"></i> LinkedIn</a>
+                        <a href="https://github.com/the-nasirkhan" target="_blank" class="hover:text-white transition flex items-center gap-2 bg-white/5 px-3 py-2 rounded-xl border border-white/10 custom-blur"><i class="fa-brands fa-github text-blue-400"></i> GitHub</a>
+                    </div>
+
+                    <!-- Action Trigger Element -->
+                    <div class="pt-2">
+                        <a href="Nasir Khan's Resume.pdf" download="Nasir_Khan_Resume.pdf" class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold px-8 py-4 rounded-2xl shadow-xl hover:shadow-blue-500/20 hover:from-blue-500 hover:to-indigo-500 transition-all duration-300 transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-arrow-down-to-line"></i> Download Verified CV (PDF)[cite: 1]
+                        </a>
+                    </div>
                 </div>
-                <div class="flex items-center">
-                    <a href="mailto:alignasirkhan@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">Contact Me</a>
-                </div>
+
             </div>
         </div>
-    </nav>
+    </div>
 
-    <!-- Hero Section with bg.png banner and Download Resume button -->
-    <header class="relative bg-cover bg-center py-24 sm:py-32 text-white" style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('bg.png');">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <!-- Profile Image (dp) -->
-            <div class="inline-block relative mb-6">
-                <img src="dp.png" alt="Nasir Khan" class="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-xl mx-auto">
-                <span class="absolute bottom-1 right-2 bg-green-500 w-5 h-5 rounded-full border-4 border-slate-900 animate-pulse"></span>
-            </div>
-            
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-2">Nasir Khan</h1>
-            <p class="text-xl sm:text-2xl text-blue-400 font-medium mb-6">Data Professional & AI Engineer</p>
-            
-            <!-- Contact Quick Links -->
-            <div class="flex flex-wrap justify-center gap-4 text-sm sm:text-base text-gray-300 mb-8">
-                <a href="tel:992-7387-864" class="hover:text-white transition flex items-center gap-2">
-                    <i class="fa-solid fa-phone text-blue-400"></i> 992-7387-864
-                </a>
-                <span class="hidden sm:inline text-gray-600">|</span>
-                <a href="mailto:alignasirkhan@gmail.com" class="hover:text-white transition flex items-center gap-2">
-                    <i class="fa-solid fa-envelope text-blue-400"></i> alignasirkhan@gmail.com
-                </a>
-                <span class="hidden sm:inline text-gray-600">|</span>
-                <a href="https://linkedin.com/in/thenasirkhan" target="_blank" class="hover:text-white transition flex items-center gap-2">
-                    <i class="fa-brands fa-linkedin text-blue-400"></i> LinkedIn
-                </a>
-                <span class="hidden sm:inline text-gray-600">|</span>
-                <a href="https://github.com/the-nasirkhan" target="_blank" class="hover:text-white transition flex items-center gap-2">
-                    <i class="fa-brands fa-github text-blue-400"></i> GitHub
-                </a>
-            </div>
+    <!-- Interface Workspace Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="space-y-20">
 
-            <!-- Download Resume Button -->
-            <div class="mt-4">
-                <a href="Nasir Khan's Resume.pdf" download="Nasir_Khan_Resume.pdf" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
-                    <i class="fa-solid fa-file-arrow-down"></i> Download Resume
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content Area -->
-    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
-
-        <!-- About Summary Section -->
-        <section id="about" class="scroll-mt-20">
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-                <h2 class="text-2xl font-bold border-b pb-4 mb-4 flex items-center gap-3 text-gray-900">
-                    <i class="fa-solid fa-user text-blue-600"></i> Professional Summary
+            <!-- Executive Summary Container -->
+            <section id="about" class="bg-white rounded-3xl p-8 border border-slate-100 shadow-xs relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-blue-600 to-indigo-600"></div>
+                <h2 class="text-sm font-black text-slate-400 uppercase tracking-widest mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-user-tie text-blue-600"></i> Executive Summary
                 </h2>
-                <p class="text-gray-600 text-lg leading-relaxed">
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
                     Data professional with 6 months of experience in ETL pipeline development, cloud migration, and dashboard creation. Proficient in Python, SQL, Azure, Databricks (Spark), and Snowflake. Skilled at transforming raw data into actionable insights and building scalable data infrastructure.
                 </p>
-            </div>
-        </section>
+            </section>
 
-        <!-- Technical Toolkit Section -->
-        <section id="skills" class="scroll-mt-20">
-            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 text-gray-900">
-                <i class="fa-solid fa-gear text-blue-600"></i> Technical Toolkit
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Skill Group 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <h3 class="font-bold text-gray-900 mb-3 text-blue-600"><i class="fa-solid fa-code mr-2"></i> Languages & Tools</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md text-xs font-medium">Python (Pandas, NumPy)</span>
-                        <span class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md text-xs font-medium">Scikit-Learn</span>
-                        <span class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md text-xs font-medium">TensorFlow / Keras</span>
-                        <span class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md text-xs font-medium">SQL</span>
-                        <span class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md text-xs font-medium">NoSQL</span>
-                    </div>
-                </div>
-                <!-- Skill Group 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <h3 class="font-bold text-gray-900 mb-3 text-blue-600"><i class="fa-solid fa-cloud mr-2"></i> Cloud & Big Data</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-medium">Azure</span>
-                        <span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-medium">Databricks (Apache Spark)</span>
-                        <span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-medium">Snowflake Architecture</span>
-                    </div>
-                </div>
-                <!-- Skill Group 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <h3 class="font-bold text-gray-900 mb-3 text-blue-600"><i class="fa-solid fa-database mr-2"></i> Data Engineering</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md text-xs font-medium">ETL Pipelines</span>
-                        <span class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md text-xs font-medium">Data Warehousing</span>
-                        <span class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md text-xs font-medium">Data Modeling & Mining</span>
-                        <span class="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md text-xs font-medium">Database Admin</span>
-                    </div>
-                </div>
-                <!-- Skill Group 4 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <h3 class="font-bold text-gray-900 mb-3 text-blue-600"><i class="fa-solid fa-chart-pie mr-2"></i> BI & Advanced AI</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-medium">Microsoft Power BI / Tableau</span>
-                        <span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-medium">Machine Learning</span>
-                        <span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-medium">Deep Learning (CNN, LSTM)</span>
-                        <span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-medium">NLP & Computer Vision</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Professional Experience Timeline -->
-        <section id="experience" class="scroll-mt-20">
-            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 text-gray-900">
-                <i class="fa-solid fa-briefcase text-blue-600"></i> Work History
-            </h2>
-            <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-6 before:bg-gray-200 before:w-0.5">
-                <!-- Experience Item 1 -->
-                <div class="relative pl-10 sm:pl-14">
-                    <div class="absolute left-1.5 sm:left-3.5 top-1 bg-blue-600 w-6 h-6 rounded-full flex items-center justify-center text-white ring-4 ring-white text-xs">
-                        <i class="fa-solid fa-circle text-[6px]"></i>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-900">Data Analyst Intern</h3>
-                                <p class="text-blue-600 font-medium">Drone Destination</p>
-                            </div>
-                            <div class="text-left sm:text-right mt-1 sm:mt-0">
-                                <span class="text-sm bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md font-medium">May 2023 – Nov 2023</span>
-                                <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
-                            </div>
+            <!-- Grid: Technical Architecture Matrix -->
+            <section id="skills" class="space-y-6">
+                <h2 class="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-blue-600"></i> Technological Matrix
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-2xs space-y-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-sm"><i class="fa-solid fa-code"></i></div>
+                        <h3 class="font-bold text-sm text-slate-900 tracking-wide uppercase">Languages & Core</h3>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="bg-slate-50 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-slate-100">Python</span>
+                            <span class="bg-slate-50 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-slate-100">SQL</span>
+                            <span class="bg-slate-50 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-slate-100">NoSQL</span>
                         </div>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
-                            <li>Optimized data integrity by executing end-to-end data cleaning and statistical analysis using Python (Pandas, NumPy) and SQL, uncovering key operational insights for drone fleet management.</li>
-                            <li>Developed automated ETL workflows to extract and transform data from multiple telemetry sources, significantly improving data pipeline efficiency and processing speed.</li>
-                            <li>Designed and deployed interactive dashboards in Power BI and Tableau, providing stakeholders with real-time visibility into KPIs and operational metrics.</li>
-                        </ul>
                     </div>
-                </div>
-
-                <!-- Experience Item 2 -->
-                <div class="relative pl-10 sm:pl-14">
-                    <div class="absolute left-1.5 sm:left-3.5 top-1 bg-gray-400 w-6 h-6 rounded-full flex items-center justify-center text-white ring-4 ring-white text-xs">
-                        <i class="fa-solid fa-circle text-[6px]"></i>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-900">Artificial Intelligence Trainee</h3>
-                                <p class="text-blue-600 font-medium">Samsung Innovation Campus</p>
-                            </div>
-                            <div class="text-left sm:text-right mt-1 sm:mt-0">
-                                <span class="text-sm bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md font-medium">Jan 2023 – Apr 2023</span>
-                                <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
-                            </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-2xs space-y-4">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-sm"><i class="fa-solid fa-cloud"></i></div>
+                        <h3 class="font-bold text-sm text-slate-900 tracking-wide uppercase">Cloud & Infra</h3>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="bg-indigo-50/50 text-indigo-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-indigo-50">Azure</span>
+                            <span class="bg-indigo-50/50 text-indigo-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-indigo-50">Databricks</span>
+                            <span class="bg-indigo-50/50 text-indigo-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-indigo-50">Snowflake</span>
                         </div>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
-                            <li>Developed and refined machine learning models using Scikit-Learn and TensorFlow, focusing on improving accuracy and reliability for complex data predictions.</li>
-                            <li>Managed the full development process from cleaning raw data to building final models, ensuring every project was backed by solid Feature Engineering and validation techniques.</li>
-                            <li>Designed specialized Natural Language Processing (NLP) tools to automatically categorize and analyze text, making unstructured information easier to use and understand.</li>
-                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-2xs space-y-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-sm"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="font-bold text-sm text-slate-900 tracking-wide uppercase">Data Operations</h3>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="bg-slate-50 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-slate-100">ETL Pipelines</span>
+                            <span class="bg-slate-50 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-slate-100">Modeling</span>
+                            <span class="bg-slate-50 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-slate-100">Warehousing</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-2xs space-y-4">
+                        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-sm"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3 class="font-bold text-sm text-slate-900 tracking-wide uppercase">Advanced AI</h3>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="bg-amber-50/50 text-amber-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-amber-50">Keras / CNN</span>
+                            <span class="bg-amber-50/50 text-amber-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-amber-50">LSTM Networks</span>
+                            <span class="bg-amber-50/50 text-amber-700 text-[11px] font-semibold px-2 py-0.5 rounded border border-amber-50">Power BI</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Technical Projects Section -->
-        <section id="projects" class="scroll-mt-20">
-            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 text-gray-900">
-                <i class="fa-solid fa-diagram-project text-blue-600"></i> Engineered Projects
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Timeline Architecture: Engineering Internships -->
+            <section id="experience" class="space-y-8">
+                <h2 class="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
+                    <i class="fa-solid fa-industry text-blue-600"></i> Professional Experience
+                </h2>
                 
-                <!-- Project 1: CloudMigrate360 -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between p-6">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-[10px] uppercase tracking-wider bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-bold">Cloud Infra</span>
-                            <i class="fa-brands fa-azure text-blue-500 text-lg"></i>
+                <div class="border border-slate-100 bg-white rounded-3xl overflow-hidden shadow-xs divide-y divide-slate-50">
+                    <!-- Row 1 -->
+                    <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-12 gap-6">
+                        <div class="md:col-span-4 space-y-1">
+                            <span class="text-xs font-black bg-blue-50 px-2.5 py-1 rounded-md text-blue-700 inline-block">May 2023 – Nov 2023</span>
+                            <h3 class="text-lg font-bold text-slate-900 pt-1">Data Analyst Intern</h3>
+                            <p class="text-sm font-bold text-slate-400">Drone Destination</p>
+                            <p class="text-xs font-medium text-slate-400"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">CloudMigrate360</h3>
-                        <p class="text-gray-600 text-xs leading-relaxed">
-                            Architected a full data migration from on-premises MS SQL Server to Azure SQL Database, managing schema transformations and ETL pipelines. Optimized query performance post-migration and ensured cloud infrastructure data integrity.
-                        </p>
+                        <div class="md:col-span-8">
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex gap-2"><span class="text-blue-500 mt-1">✓</span> <span>Optimized data integrity by executing end-to-end data cleaning and statistical analysis using Python (Pandas, NumPy) and SQL.</span></li>
+                                <li class="flex gap-2"><span class="text-blue-500 mt-1">✓</span> <span>Developed automated ETL workflows to extract and transform data from multiple telemetry sources.</span></li>
+                                <li class="flex gap-2"><span class="text-blue-500 mt-1">✓</span> <span>Designed and deployed interactive dashboards in Power BI and Tableau.</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="mt-4 pt-3 border-t border-gray-50 flex flex-wrap gap-1">
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Azure SQL</span>
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">ETL</span>
+                    <!-- Row 2 -->
+                    <div class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-12 gap-6">
+                        <div class="md:col-span-4 space-y-1">
+                            <span class="text-xs font-black bg-slate-100 px-2.5 py-1 rounded-md text-slate-600 inline-block">Jan 2023 – Apr 2023</span>
+                            <h3 class="text-lg font-bold text-slate-900 pt-1">AI Trainee</h3>
+                            <p class="text-sm font-bold text-slate-400">Samsung Innovation Campus</p>
+                            <p class="text-xs font-medium text-slate-400"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
+                        </div>
+                        <div class="md:col-span-8">
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex gap-2"><span class="text-indigo-500 mt-1">✓</span> <span>Developed and refined machine learning models using Scikit-Learn and TensorFlow.</span></li>
+                                <li class="flex gap-2"><span class="text-indigo-500 mt-1">✓</span> <span>Managed full lifecycle data processing routines backed by feature engineering.</span></li>
+                                <li class="flex gap-2"><span class="text-indigo-500 mt-1">✓</span> <span>Designed specialized Natural Language Processing (NLP) text classification modules.</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Project 2: Speech Emotion Recognition System -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between p-6">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-[10px] uppercase tracking-wider bg-purple-50 text-purple-700 px-2 py-0.5 rounded font-bold">Deep Learning</span>
-                            <i class="fa-solid fa-microphone text-purple-500 text-lg"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Speech Emotion Recognition</h3>
-                        <p class="text-gray-600 text-xs leading-relaxed">
-                            Developed a deep learning system to classify human emotions from speech using CNNs in TensorFlow. Applied specialized audio feature extraction techniques (MFCC, Mel-spectrogram) on the RAVDESS dataset to optimize predictive accuracy.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-gray-50 flex flex-wrap gap-1">
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">TensorFlow</span>
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">CNN</span>
-                    </div>
-                </div>
-
-                <!-- Project 3: Stock Sentiment Analysis -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between p-6">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-[10px] uppercase tracking-wider bg-green-50 text-green-700 px-2 py-0.5 rounded font-bold">NLP & LSTM</span>
-                            <i class="fa-solid fa-chart-line text-green-500 text-lg"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Stock Sentiment Analysis</h3>
-                        <p class="text-gray-600 text-xs leading-relaxed">
-                            Trained a Long Short-Term Memory (LSTM) deep learning network to parse thousands of unstructured public tweets. Converted raw textual data into dimensional numeric vector states to compute active consumer metrics, reinforcing algorithmic buy/sell market trading pipelines.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-gray-50 flex flex-wrap gap-1">
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">LSTM</span>
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">NLP</span>
-                    </div>
-                </div>
-
-                <!-- Project 4: English to French Translator -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between p-6">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-[10px] uppercase tracking-wider bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded font-bold">Translation</span>
-                            <i class="fa-solid fa-language text-indigo-500 text-lg"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">English to French Translator</h3>
-                        <p class="text-gray-600 text-xs leading-relaxed">
-                            Constructed a sequence-to-sequence translation framework utilizing an LSTM Neural Network architecture. Designed explicitly to handle sentence mappings, contextual syntax structures, and localized grammar rules to enable direct consumer accessibility.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-gray-50 flex flex-wrap gap-1">
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">RNN</span>
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Keras</span>
-                    </div>
-                </div>
-
-                <!-- Project 5: Twitter Sentiment Analysis -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between p-6">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-[10px] uppercase tracking-wider bg-amber-50 text-amber-700 px-2 py-0.5 rounded font-bold">Machine Learning</span>
-                            <i class="fa-brands fa-twitter text-amber-500 text-lg"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Twitter Sentiment Analysis</h3>
-                        <p class="text-gray-600 text-xs leading-relaxed">
-                            Implemented a fast Naive Bayes classifier processing big social text vectors to automatically map social mentions. Bypasses manual review overhead by delivering precise, automated metrics indicating consumer brand health.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-gray-50 flex flex-wrap gap-1">
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Naive Bayes</span>
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Scikit-Learn</span>
-                    </div>
-                </div>
-
-                <!-- Project 6: Brain Tumor Classification -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between p-6">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-[10px] uppercase tracking-wider bg-rose-50 text-rose-700 px-2 py-0.5 rounded font-bold">Medical Vision</span>
-                            <i class="fa-solid fa-brain text-rose-500 text-lg"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Brain Tumor Classification</h3>
-                        <p class="text-gray-600 text-xs leading-relaxed">
-                            Built a computer vision diagnosis tool via Keras using Convolutional Neural Networks (CNN) and Transfer Learning. Classifies automated MRI scan volumes into diagnostic subcategories (Benign, Malignant, Pituitary), outperforming traditional manual screening vulnerabilities.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-gray-50 flex flex-wrap gap-1">
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">CNN</span>
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Keras</span>
-                    </div>
-                </div>
-
-                <!-- Project 7: Face Recognition Attendance System -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between p-6 md:col-span-2 lg:col-span-1">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-[10px] uppercase tracking-wider bg-teal-50 text-teal-700 px-2 py-0.5 rounded font-bold">Biometrics</span>
-                            <i class="fa-solid fa-face-smile text-teal-500 text-lg"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Face Recognition Attendance</h3>
-                        <p class="text-gray-600 text-xs leading-relaxed">
-                            Created an automated biometric processing mechanism mapping facial features over high-definition camera feeds. Rigorously optimized to withstand illumination variance, head orientation tilts, and fluctuating distances.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-gray-50 flex flex-wrap gap-1">
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">OpenCV</span>
-                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Computer Vision</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="scroll-mt-20">
-            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 text-gray-900">
-                <i class="fa-solid fa-award text-blue-600"></i> Professional Certifications
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Codebasics Portfolio-Style Matrix Breakdown for Projects -->
+            <section id="projects" class="space-y-6">
+                <h2 class="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
+                    <i class="fa-solid fa-boxes-packing text-blue-600"></i> Codebasics Feature Matrix
+                </h2>
                 
-                <!-- Cert 1 -->
-                <a href="https://www.credly.com/badges/e62d1025-dfd6-4d63-b937-c73c25956d85/linked_in_profile" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">IBM Data Engineering Professional Certificate</span>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    
+                    <!-- Analytics Item 1 -->
+                    <div class="bg-white rounded-3xl border border-slate-100 shadow-2xs overflow-hidden flex flex-col justify-between p-6 space-y-4 hover:border-blue-500 transition-all duration-300">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between"><span class="text-[10px] font-black bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md tracking-wider uppercase">Cloud Pipeline</span><i class="fa-brands fa-azure text-blue-500"></i></div>
+                            <h3 class="text-lg font-black text-slate-900">CloudMigrate360 Suite</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed">Architected an automated production database pipeline shifting schema payloads securely from local enterprise environments over to managed Azure cloud targets smoothly without down-time gaps.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-50 grid grid-cols-2 gap-4 text-center text-xs">
+                            <div class="bg-slate-50 p-2 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Core Architecture</p><p class="font-extrabold text-slate-800 mt-0.5">Azure SQL Ecosystem</p></div>
+                            <div class="bg-slate-50 p-2 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Data Payload</p><p class="font-extrabold text-slate-800 mt-0.5">Relational Transfrom</p></div>
+                        </div>
                     </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
 
-                <!-- Cert 2 -->
-                <a href="https://www.credly.com/badges/56cf241c-edaa-457b-ac73-95f15d48f566/public_url" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">Google Data Analytics Certificate</span>
+                    <!-- Analytics Item 2 -->
+                    <div class="bg-white rounded-3xl border border-slate-100 shadow-2xs overflow-hidden flex flex-col justify-between p-6 space-y-4 hover:border-blue-500 transition-all duration-300">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between"><span class="text-[10px] font-black bg-purple-50 text-purple-700 px-2.5 py-1 rounded-md tracking-wider uppercase">Deep Vision</span><i class="fa-solid fa-brain text-purple-500"></i></div>
+                            <h3 class="text-lg font-black text-slate-900">Brain Tumor Diagnostic Platform</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed">Built an automated diagnostic classification engine through Keras using Convolutional Neural Networks (CNN) and Transfer Learning to parse big MRI image vectors instantly into structural sub-labels.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-50 grid grid-cols-2 gap-4 text-center text-xs">
+                            <div class="bg-slate-50 p-2 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Architecture</p><p class="font-extrabold text-slate-800 mt-0.5">Keras / Deep CNN</p></div>
+                            <div class="bg-slate-50 p-2 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Target Target</p><p class="font-extrabold text-slate-800 mt-0.5">MRI Scans (3 Classes)</p></div>
+                        </div>
                     </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
 
-                <!-- Cert 3 -->
-                <a href="https://www.credly.com/badges/8949c2d2-9479-436a-8121-e3fc824a582a/public_url" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">IBM Data Science Professional Certificate</span>
+                    <!-- Analytics Item 3 -->
+                    <div class="bg-white rounded-3xl border border-slate-100 shadow-2xs overflow-hidden flex flex-col justify-between p-6 space-y-4 hover:border-blue-500 transition-all duration-300">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between"><span class="text-[10px] font-black bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md tracking-wider uppercase">Financial NLP</span><i class="fa-solid fa-chart-line text-emerald-500"></i></div>
+                            <h3 class="text-lg font-black text-slate-900">Stock Sentiment LSTM Engine</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed">Trained an advanced Long Short-Term Memory network to clean thousands of real-time public communication vectors to automate financial brand sentiment analytics calculations instantly.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-50 grid grid-cols-2 gap-4 text-center text-xs">
+                            <div class="bg-slate-50 p-2 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Model Matrix</p><p class="font-extrabold text-slate-800 mt-0.5">Recurrent LSTM</p></div>
+                            <div class="bg-slate-50 p-2 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Input Payload</p><p class="font-extrabold text-slate-800 mt-0.5">Twitter Live Vectors</p></div>
+                        </div>
                     </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
 
-                <!-- Cert 4 -->
-                <a href="https://www.credly.com/badges/09ac7f36-268e-4aff-98a0-3db7ef470fbd?source=linked_in_profile" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">IBM Big Data Foundations</span>
+                    <!-- Analytics Item 4 -->
+                    <div class="bg-white rounded-3xl border border-slate-100 shadow-2xs overflow-hidden flex flex-col justify-between p-6 space-y-4 hover:border-blue-500 transition-all duration-300">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between"><span class="text-[10px] font-black bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-md tracking-wider uppercase">RNN Mapping</span><i class="fa-solid fa-language text-indigo-500"></i></div>
+                            <h3 class="text-lg font-black text-slate-900">English to French Translator</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed">Constructed an end-to-end Sequence-to-Sequence linguistic translator engine mapping syntax strings across dynamic multi-dimensional language dimensional layers natively.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-50 grid grid-cols-2 gap-4 text-center text-xs">
+                            <div class="bg-slate-50 p-2 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Framework</p><p class="font-extrabold text-slate-800 mt-0.5">LSTM Seq2Seq</p></div>
+                            <div class="bg-slate-50 p-2 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Translation</p><p class="font-extrabold text-slate-800 mt-0.5">English ➜ French</p></div>
+                        </div>
                     </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
 
-                <!-- Cert 5 -->
-                <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/LHS8366A8QGY" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">IBM Machine Learning</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
+                </div>
+            </section>
 
-                <!-- Cert 6 -->
-                <a href="https://www.coursera.org/account/accomplishments/specialization/XME99R5JUT29" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">IBM Big Data</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
+            <!-- Grid Structure for remaining 3 specialized projects -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 text-xs shadow-2xs">
+                    <span class="font-bold text-slate-400 uppercase tracking-widest block mb-1">Acoustic AI</span>
+                    <h4 class="font-bold text-slate-900 text-sm mb-1">Speech Emotion Recognition</h4>
+                    <p class="text-slate-500">Classifies human emotional states from audio frequencies using CNN networks configured within TensorFlow environments via the RAVDESS repository.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 text-xs shadow-2xs">
+                    <span class="font-bold text-slate-400 uppercase tracking-widest block mb-1">Text Analytics</span>
+                    <h4 class="font-bold text-slate-900 text-sm mb-1">Twitter Sentiment Classifier</h4>
+                    <p class="text-slate-500">Deployed an atomic, fast Naive Bayes text model matrix to instantly structure client perception trends without manual human monitoring over text datasets.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 text-xs shadow-2xs">
+                    <span class="font-bold text-slate-400 uppercase tracking-widest block mb-1">Biometrics</span>
+                    <h4 class="font-bold text-slate-900 text-sm mb-1">Face Recognition System</h4>
+                    <p class="text-slate-500">Automates corporate identity checking frameworks using facial image biostatistics engineered to withstand heavy scene illumination variances.</p>
+                </div>
+            </section>
 
-                <!-- Cert 7 -->
-                <a href="https://www.credly.com/badges/6ee639a1-a15a-4434-a5bc-ae2a1058d973?source=linked_in_profile" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">Microsoft Certified: Azure Data Fundamentals</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
-
-                <!-- Cert 8 -->
-                <a href="https://www.credly.com/badges/64c44371-f89b-4dc9-be9a-9f164e4d5203/linked_in_profile" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">Hands On Essentials - Snowflake Data Warehouse</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
-
-                <!-- Cert 9 -->
-                <a href="https://www.credly.com/badges/a7302610-0266-4730-94e5-28cc0528c72b/linked_in_profile" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">Hands On Essentials - Snowflake Data Applications</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
-
-                <!-- Cert 10 -->
-                <a href="https://www.credly.com/badges/d485da40-0dd2-4430-ab4b-f0e8514fb690/public_url" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">Hands On Essentials - Snowflake Data Sharing</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
-
-                <!-- Cert 11 -->
-                <a href="https://www.credly.com/badges/f1784ede-4fff-4a08-9489-a93660165cbf/public_url" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">Hands On Essentials - Snowflake Data Lake</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
-
-                <!-- Cert 12 -->
-                <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/GUPT6L7HCUCK" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">IBM Data Analytics with Excel and R</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
-
-                <!-- Cert 13 -->
-                <a href="https://www.credly.com/earner/earned/badge/9305393c-f662-4988-b697-bc26f2733515" target="_blank" class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 shadow-xs hover:border-blue-500 hover:shadow-sm transition group">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
-                        <span class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">IBM Data Analyst Professional Certificate</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
-                </a>
-
-            </div>
-        </section>
-
-        <!-- Educational Foundations -->
-        <section id="education" class="scroll-mt-20">
-            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 text-gray-900">
-                <i class="fa-solid fa-graduation-cap text-blue-600"></i> Education
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Advanced Certificate Matrix Grid Node -->
+            <section id="certifications" class="space-y-6">
+                <h2 class="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
+                    <i class="fa-solid fa-certificate text-blue-600"></i> Global Engineering Credentials
+                </h2>
                 
-                <!-- Degree 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs text-blue-600 font-bold tracking-wide uppercase">Post Graduate Diploma</span>
-                        <h3 class="text-lg font-bold text-gray-900 mt-1">Business Analytics</h3>
-                        <p class="text-gray-600 text-sm mt-1">Aligarh Muslim University</p>
-                        <p class="text-xs text-gray-400 mt-1"><i class="fa-solid fa-location-dot"></i> Aligarh, India</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <a href="https://www.credly.com/badges/e62d1025-dfd6-4d63-b937-c73c25956d85/linked_in_profile" target="_blank" class="glass-card flex items-center justify-between p-4 rounded-xl shadow-3xs hover:border-blue-600 transition group text-xs font-bold text-slate-800">
+                        <span class="group-hover:text-blue-600 transition"><i class="fa-solid fa-cube mr-2 text-blue-600"></i> IBM Data Engineering Prof.</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+                    </a>
+                    <a href="https://www.credly.com/badges/56cf241c-edaa-457b-ac73-95f15d48f566/public_url" target="_blank" class="glass-card flex items-center justify-between p-4 rounded-xl shadow-3xs hover:border-blue-600 transition group text-xs font-bold text-slate-800">
+                        <span class="group-hover:text-blue-600 transition"><i class="fa-solid fa-chart-line mr-2 text-blue-600"></i> Google Data Analytics Prof.</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+                    </a>
+                    <a href="https://www.credly.com/badges/8949c2d2-9479-436a-8121-e3fc824a582a/public_url" target="_blank" class="glass-card flex items-center justify-between p-4 rounded-xl shadow-3xs hover:border-blue-600 transition group text-xs font-bold text-slate-800">
+                        <span class="group-hover:text-blue-600 transition"><i class="fa-solid fa-microchip mr-2 text-blue-600"></i> IBM Data Science Professional</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+                    </a>
+                    <a href="https://www.credly.com/badges/6ee639a1-a15a-4434-a5bc-ae2a1058d973?source=linked_in_profile" target="_blank" class="glass-card flex items-center justify-between p-4 rounded-xl shadow-3xs hover:border-blue-600 transition group text-xs font-bold text-slate-800">
+                        <span class="group-hover:text-blue-600 transition"><i class="fa-solid fa-cloud mr-2 text-blue-600"></i> Azure Data Fundamentals</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+                    </a>
+                    <a href="https://www.credly.com/badges/64c44371-f89b-4dc9-be9a-9f164e4d5203/linked_in_profile" target="_blank" class="glass-card flex items-center justify-between p-4 rounded-xl shadow-3xs hover:border-blue-600 transition group text-xs font-bold text-slate-800">
+                        <span class="group-hover:text-blue-600 transition"><i class="fa-solid fa-database mr-2 text-blue-600"></i> Snowflake Warehouse Essentials</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+                    </a>
+                    <a href="https://www.credly.com/badges/a7302610-0266-4730-94e5-28cc0528c72b/linked_in_profile" target="_blank" class="glass-card flex items-center justify-between p-4 rounded-xl shadow-3xs hover:border-blue-600 transition group text-xs font-bold text-slate-800">
+                        <span class="group-hover:text-blue-600 transition"><i class="fa-solid fa-database mr-2 text-blue-600"></i> Snowflake Data Apps Essentials</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+                    </a>
+                    <a href="https://www.credly.com/badges/d485da40-0dd2-4430-ab4b-f0e8514fb690/public_url" target="_blank" class="glass-card flex items-center justify-between p-4 rounded-xl shadow-3xs hover:border-blue-600 transition group text-xs font-bold text-slate-800">
+                        <span class="group-hover:text-blue-600 transition"><i class="fa-solid fa-database mr-2 text-blue-600"></i> Snowflake Data Sharing Node</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+                    </a>
+                    <a href="https://www.credly.com/badges/f1784ede-4fff-4a08-9489-a93660165cbf/public_url" target="_blank" class="glass-card flex items-center justify-between p-4 rounded-xl shadow-3xs hover:border-blue-600 transition group text-xs font-bold text-slate-800">
+                        <span class="group-hover:text-blue-600 transition"><i class="fa-solid fa-database mr-2 text-blue-600"></i> Snowflake Data Lake Frameworks</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+                    </a>
+                    <a href="https://www.credly.com/earner/earned/badge/9305393c-f662-4988-b697-bc26f2733515" target="_blank" class="glass-card flex items-center justify-between p-4 rounded-xl shadow-3xs hover:border-blue-600 transition group text-xs font-bold text-slate-800">
+                        <span class="group-hover:text-blue-600 transition"><i class="fa-solid fa-chart-column mr-2 text-blue-600"></i> IBM Data Analyst Professional</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Academic History Block -->
+            <section id="education" class="space-y-6">
+                <h2 class="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap text-blue-600"></i> Academic Background
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 flex flex-col justify-between shadow-3xs">
+                        <div>
+                            <span class="text-[10px] uppercase font-black text-slate-400">Post Graduate Diploma</span>
+                            <h3 class="text-base font-bold text-slate-900">Business Analytics</h3>
+                            <p class="text-xs text-slate-500">Aligarh Muslim University</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-6 pt-3 border-t border-slate-50 text-xs font-bold"><span class="text-slate-400">2024 – 2025</span><span class="text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">CGPA: 7.3 / 10.0</span></div>
                     </div>
-                    <div class="mt-6 pt-4 border-t border-gray-50 flex justify-between items-center text-sm">
-                        <span class="text-gray-500 font-medium">2024 – 2025</span>
-                        <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded font-bold text-xs">CGPA: 7.3 / 10.0</span>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 flex flex-col justify-between shadow-3xs">
+                        <div>
+                            <span class="text-[10px] uppercase font-black text-slate-400">Bachelor of Technology</span>
+                            <h3 class="text-base font-bold text-slate-900">Electronics & Communication</h3>
+                            <p class="text-xs text-slate-500">Jamia Hamdard University</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-6 pt-3 border-t border-slate-50 text-xs font-bold"><span class="text-slate-400">2020 – 2023</span><span class="text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">CGPA: 7.9 / 10.0</span></div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 flex flex-col justify-between shadow-3xs">
+                        <div>
+                            <span class="text-[10px] uppercase font-black text-slate-400">Engineering Diploma</span>
+                            <h3 class="text-base font-bold text-slate-900">Electronics Engineering</h3>
+                            <p class="text-xs text-slate-500">Jamia Millia Islamia</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-6 pt-3 border-t border-slate-50 text-xs font-bold"><span class="text-slate-400">2016 – 2019</span><span class="text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">CGPA: 6.8 / 10.0</span></div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 flex flex-col justify-between shadow-3xs">
+                        <div>
+                            <span class="text-[10px] uppercase font-black text-slate-400">Language Certification</span>
+                            <h3 class="text-base font-bold text-slate-900">Russian Language</h3>
+                            <p class="text-xs text-slate-500">Jamia Millia Islamia</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-6 pt-3 border-t border-slate-50 text-xs font-bold"><span class="text-slate-400">2017 – 2018</span><span class="text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Grade: 6.3</span></div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Degree 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs text-blue-600 font-bold tracking-wide uppercase">Bachelor of Technology</span>
-                        <h3 class="text-lg font-bold text-gray-900 mt-1">Electronics and Communication Engineering</h3>
-                        <p class="text-gray-600 text-sm mt-1">Jamia Hamdard University</p>
-                        <p class="text-xs text-gray-400 mt-1"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-gray-50 flex justify-between items-center text-sm">
-                        <span class="text-gray-500 font-medium">2020 – 2023</span>
-                        <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded font-bold text-xs">CGPA: 7.9 / 10.0</span>
-                    </div>
-                </div>
+        </div>
+    </div>
 
-                <!-- Degree 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs text-blue-600 font-bold tracking-wide uppercase">Diploma Engineering</span>
-                        <h3 class="text-lg font-bold text-gray-900 mt-1">Electronics Engineering</h3>
-                        <p class="text-gray-600 text-sm mt-1">Jamia Millia Islamia</p>
-                        <p class="text-xs text-gray-400 mt-1"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-gray-50 flex justify-between items-center text-sm">
-                        <span class="text-gray-500 font-medium">2016 – 2019</span>
-                        <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded font-bold text-xs">CGPA: 6.8 / 10.0</span>
-                    </div>
-                </div>
-
-                <!-- Degree 4 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs text-blue-600 font-bold tracking-wide uppercase">Certificate</span>
-                        <h3 class="text-lg font-bold text-gray-900 mt-1">Russian Language</h3>
-                        <p class="text-gray-600 text-sm mt-1">Jamia Millia Islamia</p>
-                        <p class="text-xs text-gray-400 mt-1"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-gray-50 flex justify-between items-center text-sm">
-                        <span class="text-gray-500 font-medium">2017 – 2018</span>
-                        <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded font-bold text-xs">Grade: 6.3</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer Area -->
-    <footer class="bg-white border-t border-gray-200 mt-20 py-8 text-center text-sm text-gray-500">
-        <p>© 2026 Nasir Khan. All rights reserved.</p>
+    <!-- System Footer -->
+    <footer class="bg-white border-t border-slate-200 mt-24 py-8 text-center text-xs text-slate-400 font-bold tracking-wider">
+        <p>© 2026 Nasir Khan. Portfolio Pipeline Active.</p>
     </footer>
 
 </body>
