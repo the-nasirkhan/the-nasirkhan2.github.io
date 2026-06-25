@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nasir Khan | Premium Data Analytics Portfolio</title>
+    <title>Nasir Khan Portfolio | Premium Data Analytics Portfolio</title>
     <!-- Tailwind CSS v4 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- FontAwesome Premium Icons -->
@@ -21,7 +21,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center gap-2">
                 <div class="w-3 h-3 rounded-full bg-blue-500 animate-pulse"></div>
-                <span class="font-black text-sm tracking-wider uppercase">Nasir Khan</span>
+                <span class="font-black text-sm tracking-wider uppercase">Nasir Khan Portfolio</span>
             </div>
             <div class="hidden md:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-slate-400">
                 <a href="#about" class="hover:text-white transition">Summary</a>
@@ -42,18 +42,19 @@
         <div class="relative max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 z-10 py-20">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Brand Profile Module -->
+                <!-- Brand Profile Module with object-bottom to preserve hair framing -->
                 <div class="lg:col-span-4 text-center lg:text-left space-y-6">
                     <div class="inline-block relative">
                         <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                        <img src="dp.png" alt="Nasir Khan" class="relative w-44 h-44 lg:w-52 lg:h-52 rounded-3xl object-cover border-2 border-slate-700/50 shadow-2xl mx-auto transform hover:scale-[1.02] transition duration-300">
+                        <img src="dp.png" alt="Nasir Khan" class="relative w-44 h-44 lg:w-52 lg:h-52 rounded-3xl object-cover object-bottom border-2 border-slate-700/50 shadow-2xl mx-auto transform hover:scale-[1.02] transition duration-300">
                     </div>
                 </div>
 
                 <!-- Bio Architecture Node -->
-                <div class="lg:col-span-8 space-y-3 text-center lg:text-left">
-                    <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white">Hi, I am Nasir Khan</h1>
-                    <p class="text-xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-400">Data Analytics Professional</p>
+                <div class="lg:col-span-8 space-y-1 text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white block">Hi,</h1>
+                    <h2 class="text-4xl sm:text-6xl font-black tracking-tight text-white block">I am Nasir Khan</h2>
+                    <p class="text-xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-400 pt-2">A Data Analytics Professional</p>
                 </div>
 
             </div>
@@ -174,7 +175,7 @@
                 </div>
             </section>
 
-            <!-- Projects -->
+            <!-- Projects Section: Reordered to highlight specified items -->
             <section id="projects" class="space-y-6">
                 <h2 class="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
                     <i class="fa-solid fa-boxes-packing text-blue-600"></i> Projects
@@ -182,8 +183,9 @@
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     
-                    <!-- Project 1 -->
-                    <div class="bg-white rounded-3xl border border-slate-100 shadow-xs flex flex-col justify-between p-6 sm:p-8 space-y-4 hover:border-blue-500 hover:shadow-lg transition-all duration-300">
+                    <!-- Highlighted Project 1 -->
+                    <div class="bg-white rounded-3xl border-2 border-blue-600 shadow-md flex flex-col justify-between p-6 sm:p-8 space-y-4 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-blue-600 text-white font-black text-[9px] uppercase tracking-widest px-3 py-1 rounded-bl-xl">Featured</div>
                         <div class="space-y-3">
                             <div class="flex items-center justify-between"><span class="text-[10px] font-black bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md tracking-wider uppercase">Cloud Architecture</span><i class="fa-brands fa-azure text-blue-500 text-xl"></i></div>
                             <h3 class="text-xl font-black text-slate-900">CloudMigrate360 Suite</h3>
@@ -195,7 +197,21 @@
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
+                    <!-- Highlighted Project 2 -->
+                    <div class="bg-white rounded-3xl border-2 border-blue-600 shadow-md flex flex-col justify-between p-6 sm:p-8 space-y-4 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-blue-600 text-white font-black text-[9px] uppercase tracking-widest px-3 py-1 rounded-bl-xl">Featured</div>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between"><span class="text-[10px] font-black bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md tracking-wider uppercase">Acoustic Deep Learning</span><i class="fa-solid fa-microphone text-blue-500 text-xl"></i></div>
+                            <h3 class="text-xl font-black text-slate-900">Speech Emotion Recognition System</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed">Classifies exact human vocal emotional changes across wave spectrum parameters utilizing CNN modeling methodologies mapped inside the RAVDESS database repository.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 grid grid-cols-2 gap-4 text-center text-xs">
+                            <div class="bg-slate-50 p-3 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Core Architecture</p><p class="font-extrabold text-slate-800 mt-0.5">CNN Spectrum Models</p></div>
+                            <div class="bg-slate-50 p-3 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Repository Target</p><p class="font-extrabold text-slate-800 mt-0.5">RAVDESS Core Database</p></div>
+                        </div>
+                    </div>
+
+                    <!-- Regular Project 3 -->
                     <div class="bg-white rounded-3xl border border-slate-100 shadow-xs flex flex-col justify-between p-6 sm:p-8 space-y-4 hover:border-blue-500 hover:shadow-lg transition-all duration-300">
                         <div class="space-y-3">
                             <div class="flex items-center justify-between"><span class="text-[10px] font-black bg-purple-50 text-purple-700 px-2.5 py-1 rounded-md tracking-wider uppercase">Computer Vision</span><i class="fa-solid fa-brain text-purple-500 text-xl"></i></div>
@@ -208,7 +224,7 @@
                         </div>
                     </div>
 
-                    <!-- Project 3 -->
+                    <!-- Regular Project 4 -->
                     <div class="bg-white rounded-3xl border border-slate-100 shadow-xs flex flex-col justify-between p-6 sm:p-8 space-y-4 hover:border-blue-500 hover:shadow-lg transition-all duration-300">
                         <div class="space-y-3">
                             <div class="flex items-center justify-between"><span class="text-[10px] font-black bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md tracking-wider uppercase">Financial Recurrent AI</span><i class="fa-solid fa-chart-line text-emerald-500 text-xl"></i></div>
@@ -221,28 +237,15 @@
                         </div>
                     </div>
 
-                    <!-- Project 4 -->
-                    <div class="bg-white rounded-3xl border border-slate-100 shadow-xs flex flex-col justify-between p-6 sm:p-8 space-y-4 hover:border-blue-500 hover:shadow-lg transition-all duration-300">
-                        <div class="space-y-3">
-                            <div class="flex items-center justify-between"><span class="text-[10px] font-black bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-md tracking-wider uppercase">Seq2Seq Modeling</span><i class="fa-solid fa-language text-indigo-500 text-xl"></i></div>
-                            <h3 class="text-xl font-black text-slate-900">English to French Translator</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed">Constructed an end-to-end Sequence-to-Sequence linguistic translator engine mapping syntax strings across dynamic multi-dimensional language dimensional layers natively.</p>
-                        </div>
-                        <div class="pt-4 border-t border-slate-100 grid grid-cols-2 gap-4 text-center text-xs">
-                            <div class="bg-slate-50 p-3 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Framework</p><p class="font-extrabold text-slate-800 mt-0.5">Seq2Seq Neural Mapping</p></div>
-                            <div class="bg-slate-50 p-3 rounded-xl"><p class="text-[10px] font-bold text-slate-400 uppercase">Linguistic Axis</p><p class="font-extrabold text-slate-800 mt-0.5">English ➜ French</p></div>
-                        </div>
-                    </div>
-
                 </div>
             </section>
 
-            <!-- Grid Structure for remaining 3 specialized projects -->
+            <!-- Remaining Projects Grid Matrix -->
             <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-xs hover:border-blue-500 transition duration-300">
-                    <span class="font-bold text-slate-400 text-[10px] uppercase tracking-widest block mb-1">Acoustic Deep Learning</span>
-                    <h4 class="font-black text-slate-900 text-base mb-1">Speech Emotion Recognition</h4>
-                    <p class="text-xs text-slate-500 leading-relaxed">Classifies exact human vocal emotional changes across wave spectrum parameters utilizing CNN modeling methodologies mapped inside the RAVDESS database repository.</p>
+                    <span class="font-bold text-slate-400 text-[10px] uppercase tracking-widest block mb-1">Seq2Seq Modeling</span>
+                    <h4 class="font-black text-slate-900 text-base mb-1">English to French Translator</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Constructed an end-to-end Sequence-to-Sequence linguistic translator engine mapping syntax strings across dynamic multi-dimensional language dimensional layers natively.</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-xs hover:border-blue-500 transition duration-300">
                     <span class="font-bold text-slate-400 text-[10px] uppercase tracking-widest block mb-1">Bayes Analytics</span>
@@ -350,9 +353,7 @@
                 </h2>
                 
                 <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-xs space-y-8">
-                    <p class="text-slate-600 text-base font-medium leading-relaxed max-w-2xl">
-                        I am always open to discussing advanced data architectures, production engineering infrastructure initiatives, or core analytics systems.
-                    </p>
+                    <p class="text-slate-600 text-base font-medium leading-relaxed max-w-none block clear-both whitespace-normal">I am always open to discussing advanced data architectures, production engineering infrastructure initiatives, or core analytics systems.</p>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         
