@@ -1,1 +1,305 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Shahnawaz | Data Analytics & Engineering Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased balance">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">MS.</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-600 font-medium transition">Skills</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-600 font-medium transition">Experience</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 font-medium transition">Projects</a>
+                    <a href="#education" class="text-gray-600 hover:text-blue-600 font-medium transition">Education</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="mailto:alignasirkhan@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with bg.png banner -->
+    <header class="relative bg-cover bg-center py-24 sm:py-32 text-white" style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('bg.png');">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <!-- Profile Image (dp) -->
+            <div class="inline-block relative mb-6">
+                <img src="dp.png" alt="Mohd Shahnawaz" class="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-xl mx-auto">
+                <span class="absolute bottom-1 right-2 bg-green-500 w-5 h-5 rounded-full border-4 border-slate-900 animate-pulse"></span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-2">Mohd Shahnawaz</h1>
+            <p class="text-xl sm:text-2xl text-blue-400 font-medium mb-6">Data Analytics & Engineering Professional</p>
+            
+            <!-- Contact Quick Links -->
+            <div class="flex flex-wrap justify-center gap-4 text-sm sm:text-base text-gray-300 mb-8">
+                <a href="tel:992-7387-864" class="hover:text-white transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-blue-400"></i> 992-7387-864
+                </a>
+                <span class="hidden sm:inline text-gray-600">|</span>
+                <a href="mailto:alignasirkhan@gmail.com" class="hover:text-white transition flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-blue-400"></i> alignasirkhan@gmail.com
+                </a>
+                <span class="hidden sm:inline text-gray-600">|</span>
+                <a href="https://linkedin.com/in/thenasirkhan" target="_blank" class="hover:text-white transition flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin text-blue-400"></i> LinkedIn
+                </a>
+                <span class="hidden sm:inline text-gray-600">|</span>
+                <a href="https://github.com/the-nasirkhan" target="_blank" class="hover:text-white transition flex items-center gap-2">
+                    <i class="fa-brands fa-github text-blue-400"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+
+        <!-- About Summary Section -->
+        <section id="about" class="scroll-mt-20">
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <h2 class="text-2xl font-bold border-b pb-4 mb-4 flex items-center gap-3 text-gray-900">
+                    <i class="fa-solid fa-user text-blue-600"></i> Professional Summary
+                </h2>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Data professional with 6 months of experience in ETL pipeline development, cloud migration, and dashboard creation. Proficient in Python, SQL, Azure, Databricks (Spark), and Snowflake. Skilled at transforming raw data into actionable insights and building scalable data infrastructure.
+                </p>
+            </div>
+        </section>
+
+        <!-- Technical Toolkit Section -->
+        <section id="skills" class="scroll-mt-20">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 text-gray-900">
+                <i class="fa-solid fa-gear text-blue-600"></i> Technical Toolkit
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                
+                <!-- Skill Group 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-gray-900 mb-3 text-blue-600"><i class="fa-solid fa-code mr-2"></i> Languages & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Python (Pandas, NumPy)</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Scikit-Learn</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">TensorFlow</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">NoSQL</span>
+                    </div>
+                </div>
+
+                <!-- Skill Group 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-gray-900 mb-3 text-blue-600"><i class="fa-solid fa-cloud mr-2"></i> Cloud & Big Data</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Azure</span>
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Databricks (Apache Spark)</span>
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Snowflake</span>
+                    </div>
+                </div>
+
+                <!-- Skill Group 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-gray-900 mb-3 text-blue-600"><i class="fa-solid fa-database mr-2"></i> Data Engineering</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">ETL Pipelines</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Data Warehousing</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Data Modeling</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Data Mining</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Database Administration</span>
+                    </div>
+                </div>
+
+                <!-- Skill Group 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-gray-900 mb-3 text-blue-600"><i class="fa-solid fa-chart-pie mr-2"></i> Business Intelligence & ML</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Microsoft Power BI</span>
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Tableau</span>
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Machine Learning</span>
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Deep Learning</span>
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">NLP</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Professional Experience Timeline -->
+        <section id="experience" class="scroll-mt-20">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 text-gray-900">
+                <i class="fa-solid fa-briefcase text-blue-600"></i> Work History
+            </h2>
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-6 before:bg-gray-200 before:w-0.5">
+                
+                <!-- Experience Item 1 -->
+                <div class="relative pl-10 sm:pl-14">
+                    <div class="absolute left-1.5 sm:left-3.5 top-1 bg-blue-600 w-6 h-6 rounded-full flex items-center justify-center text-white ring-4 ring-white text-xs">
+                        <i class="fa-solid fa-circle text-[6px]"></i>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">Data Analyst Intern</h3>
+                                <p class="text-blue-600 font-medium">Drone Destination</p>
+                            </div>
+                            <div class="text-left sm:text-right mt-1 sm:mt-0">
+                                <span class="text-sm bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md font-medium">May 2023 – Nov 2023</span>
+                                <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm sm:text-base">
+                            <li>Optimized data integrity by executing end-to-end data cleaning and statistical analysis using Python (Pandas, NumPy) and SQL, uncovering key operational insights for drone fleet management.</li>
+                            <li>Developed automated ETL workflows to extract and transform data from multiple telemetry sources, significantly improving data pipeline efficiency and processing speed.</li>
+                            <li>Designed and deployed interactive dashboards in Power BI and Tableau, providing stakeholders with real-time visibility into KPIs and operational metrics.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="relative pl-10 sm:pl-14">
+                    <div class="absolute left-1.5 sm:left-3.5 top-1 bg-gray-400 w-6 h-6 rounded-full flex items-center justify-center text-white ring-4 ring-white text-xs">
+                        <i class="fa-solid fa-circle text-[6px]"></i>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">Artificial Intelligence Trainee</h3>
+                                <p class="text-blue-600 font-medium">Samsung Innovation Campus</p>
+                            </div>
+                            <div class="text-left sm:text-right mt-1 sm:mt-0">
+                                <span class="text-sm bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md font-medium">Jan 2023 – Apr 2023</span>
+                                <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm sm:text-base">
+                            <li>Developed and refined machine learning models using Scikit-Learn and TensorFlow, focusing on improving accuracy and reliability for complex data predictions.</li>
+                            <li>Managed the full development process from cleaning raw data to building final models, ensuring every project was backed by solid Feature Engineering and validation techniques.</li>
+                            <li>Designed specialized Natural Language Processing (NLP) tools to automatically categorize and analyze text, making unstructured information easier to use and understand.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Featured Architectural & Engineering Projects -->
+        <section id="projects" class="scroll-mt-20">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 text-gray-900">
+                <i class="fa-solid fa-diagram-project text-blue-600"></i> Featured Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs uppercase tracking-wider bg-blue-50 text-blue-700 px-2.5 py-1 rounded font-bold">Cloud Migration</span>
+                            <i class="fa-brands fa-azure text-blue-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">CloudMigrate360</h3>
+                        <p class="text-gray-500 text-xs mb-3 font-medium">End-to-End Cloud Data Migration</p>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Architected a full data migration from on-premises MS SQL Server to Azure SQL Database, managing schema transformations and robust ETL pipelines. Optimized post-migration query environments to assure consistent system operations.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50 flex items-center gap-2">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded font-medium">Azure SQL</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded font-medium">ETL</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded font-medium">SQL Server</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs uppercase tracking-wider bg-purple-50 text-purple-700 px-2.5 py-1 rounded font-bold">Deep Learning</span>
+                            <i class="fa-solid fa-brain text-purple-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Speech Emotion Recognition</h3>
+                        <p class="text-gray-500 text-xs mb-3 font-medium">Deep Learning Auditory System</p>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Developed a deep learning infrastructure to classify distinct human emotions from raw speech vectors using CNNs in TensorFlow. Applied specialized audio feature extraction techniques (MFCC, Mel-spectrogram) on the RAVDESS dataset.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50 flex items-center gap-2">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded font-medium">TensorFlow</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded font-medium">CNN</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded font-medium">Python</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="bg-linear-to-r from-slate-900 to-indigo-950 text-white rounded-2xl p-8 shadow-md">
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-award text-blue-400"></i> Certifications & Credentials</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-300">
+                <div class="flex items-start gap-3 bg-white/5 p-3 rounded-lg"><i class="fa-solid fa-certificate text-blue-400 mt-1"></i> <span>Google Data Analytics Professional Certificate</span></div>
+                <div class="flex items-start gap-3 bg-white/5 p-3 rounded-lg"><i class="fa-solid fa-certificate text-blue-400 mt-1"></i> <span>IBM Data Engineering Professional Certificate</span></div>
+                <div class="flex items-start gap-3 bg-white/5 p-3 rounded-lg"><i class="fa-solid fa-certificate text-blue-400 mt-1"></i> <span>Hands On Essentials Snowflake Data Warehouse</span></div>
+                <div class="flex items-start gap-3 bg-white/5 p-3 rounded-lg"><i class="fa-solid fa-certificate text-blue-400 mt-1"></i> <span>DP-900: Microsoft Azure Data Fundamentals</span></div>
+            </div>
+        </section>
+
+        <!-- Educational Foundations -->
+        <section id="education" class="scroll-mt-20">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 text-gray-900">
+                <i class="fa-solid fa-graduation-cap text-blue-600"></i> Education
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Degree 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs text-blue-600 font-bold tracking-wide uppercase">Post Graduate Diploma</span>
+                        <h3 class="text-lg font-bold text-gray-900 mt-1">Business Analytics</h3>
+                        <p class="text-gray-600 text-sm mt-1">Aligarh Muslim University</p>
+                        <p class="text-xs text-gray-400 mt-1"><i class="fa-solid fa-location-dot"></i> Aligarh, India</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-50 flex justify-between items-center text-sm">
+                        <span class="text-gray-500 font-medium">2024 – 2025</span>
+                        <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded font-bold text-xs">CGPA: 7.3 / 10.0</span>
+                    </div>
+                </div>
+
+                <!-- Degree 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs text-blue-600 font-bold tracking-wide uppercase">Bachelor of Technology</span>
+                        <h3 class="text-lg font-bold text-gray-900 mt-1">Electronics and Communication Engineering</h3>
+                        <p class="text-gray-600 text-sm mt-1">Jamia Hamdard University</p>
+                        <p class="text-xs text-gray-400 mt-1"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-50 flex justify-between items-center text-sm">
+                        <span class="text-gray-500 font-medium">2020 – 2023</span>
+                        <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded font-bold text-xs">CGPA: 7.9 / 10.0</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="bg-white border-t border-gray-200 mt-20 py-8 text-center text-sm text-gray-500">
+        <p>© 2026 Mohd Shahnawaz. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
